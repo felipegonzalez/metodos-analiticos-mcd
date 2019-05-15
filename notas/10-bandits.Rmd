@@ -564,8 +564,8 @@ mejorar esta deficiencia.
 ### Comparación con experimentación clásica
 
 En experimentación usual, siempre asignamos aleatoriamente el brazo (por una cantidad
-de tiempo inicial fija), de forma que $epsilon=1$,
-y después siempre escogemos el mejor brazo $epsilon = 0$. Es decir: al principio exploramos
+de tiempo inicial fija), de forma que $\epsilon=1$,
+y después siempre escogemos el mejor brazo $\epsilon = 0$. Es decir: al principio exploramos
 intentando encontrar muestras balanceadas en tamaño para cada brazo, y al final
 solo explotamos.
 
