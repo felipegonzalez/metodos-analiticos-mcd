@@ -39,10 +39,10 @@ hace una búsqueda, debemos decidir que anuncio poner, sin estar seguros de cuá
 búsquedas de qué tipo vamos a ver en el futuro. 
 
 #### Ejemplo{-}
-Supongamos que tenemos dos anunciantes. El anunciante A ofrece 10 centavos por click 
-para la búsqueda de "viajes a cancún". El anunciante B ofrece 20 centavos por click
+Supongamos que tenemos dos anunciantes. El anunciante A ofrece $10$ centavos por click 
+para la búsqueda de "viajes a cancún". El anunciante B ofrece $20$ centavos por click
 en los términos "viajes a playa" y "viajes a cancún". Supongamos que ambos tienen un 
-presupuesto de 100 dólares. 
+presupuesto de $100$ dólares. 
 
 Ahora supongamos que llega una búsqueda por "viajes a cancún". ¿A quién le damos
 el anuncio? En primer lugar, podríamos decidir darle el espacio a B, que tiene la oferta
@@ -127,8 +127,8 @@ Es un  matching perfecto, pues todos los nodos están pareados con algún otro.
 Es también maximal, pues no podemos agregar aristas para tener un matching más grande.
 
 Obsérvese también que es único matching perfecto para esta gráfica. Si empezamos
-agregando (a,1), por ejemplo, no queda ningún candidato para c. Si conectármaos
-(b,3), entonces tampoco quedarían candidatos para 2.
+agregando $(a,1)$, por ejemplo, no queda ningún candidato para $c$. Si conectármaos
+$(b,3)$, entonces tampoco quedarían candidatos para $2$.
 
 El siguiente matching no es perfecto, aunque sí es maximal:
 
@@ -224,7 +224,7 @@ sum(match_1$in_matching)/4
 ```
 
 
-Resulta ser que **el desempeño del algoritmo miope no puede ser menor a 1/2**, lo cual
+Resulta ser que **el desempeño del algoritmo miope no puede ser menor a $1/2$**, lo cual
 no es una cota tan mala. A continuación hacemos la demostración:
 
 Sea $M^*$ un matching maximal, y sea $M$ un matching producido por el algoritmo
@@ -246,7 +246,7 @@ Por los argumentos y definiciones anteriores, tenemos entonces:
 
 Juntando estas tres desigualdades, obtenemos que
 $$|M|\geq \frac{1}{2}|M^*|$$
-Lo que implica que el cociente de competitividad es al menos un 1/2.
+Lo que implica que el cociente de competitividad es al menos un $1/2$.
 
 
 ## Matching basado en desempeño
@@ -276,7 +276,7 @@ decidir entonces, para cada búsqueda, qué anuncios mostrar.
 Antes de que llegue una búsqueda:
 
 - Cada anunciante hace una oferta
-por click (por ejemplo, 50 centavos de dólar por click). Esto es lo que está dispuesto a pagar
+por click (por ejemplo, $50$ centavos de dólar por click). Esto es lo que está dispuesto a pagar
 cada anunciante por un click en su anuncio.
 - Junto con estas ofertas, los anunciantes establecen un presupuesto diario (o en cierto periodo), que establece cuánto
 están dispuestos a pagar en total (por ejemplo, durante cada día).
@@ -284,7 +284,7 @@ están dispuestos a pagar en total (por ejemplo, durante cada día).
 
 Cuando llega una búsqueda, debemos incluir anuncios bajo las siguientes reglas:
 
-- El número de anuncios mostrados será menor que un máximo preestablecido (3, 5, etc)
+- El número de anuncios mostrados será menor que un máximo preestablecido ($3$, $5$, etc)
 - Cada uno de los anuncios mostrados fueron de anunciantes con ofertas para tal búsqueda y anuncio.
 - Ningún anuncio mostrado puede exceder el presupuesto de ningún anunciante en caso de
 que sean clickeados.
@@ -313,17 +313,17 @@ knitr::kable(ejemplo)
 ```
 
 En este caso, el ganador de la subasta es el anunciante $b$. Si la subasta
-es de primer precio, entonces pagará por click 1 dólar.
+es de primer precio, entonces pagará por click $1$ dólar.
 
 En el verdadero Adwords de Google, sin embargo, se utiliza una especie de subasta
-de segundo precio. En este caso, esta cantidad es 81 centavos, que es la mínima
+de segundo precio. En este caso, esta cantidad es $81$ centavos, que es la mínima
 oferta que el ganador $b$ tuvo que hacer para ganar la subasta, y 
 se calcula como sigue:
 
 tomamos el segundo lugar de la subasta, que el anunciante $c$. Su esperado es de
-4 dólares (mínimo esperado para ganar la subasta), 
-que dividimos entre su CTR del ganador (0.05) para obtener 80 centavos. Agregamos
-un centavo para que esté por arriba de la segunda oferta y obtenemos 81 centavos.
+$4$ dólares (mínimo esperado para ganar la subasta), 
+que dividimos entre su CTR del ganador ($0.05$) para obtener $80$ centavos. Agregamos
+un centavo para que esté por arriba de la segunda oferta y obtenemos $81$ centavos.
 
 ---
 
@@ -351,23 +351,23 @@ han usado típicamente para anuncios *display*.
 
 #### Ejemplo {-}
 Tenemos dos anunciantes $A$ y $B$, cada uno con un presupuesto de 2 pesos, y 
-las ofertas que hacen son de 0 o 1 peso. En cada búsqueda solo podemos mostrar un anuncio,
+las ofertas que hacen son de $0$ o $1$ peso. En cada búsqueda solo podemos mostrar un anuncio,
 y suponemos que el CTR de todos los anuncios tienen el mismo valor.
 
-Ahora imaginemos que $A$ hace oferta (1 peso) por las consultas $x$, y $B$
-hace ofertas de 1 peso por las consultas $x$ y $y$. 
+Ahora imaginemos que $A$ hace oferta ($1$ peso) por las consultas $x$, y $B$
+hace ofertas de $1$ peso por las consultas $x$ y $y$. 
 
 Si observamos la sucesión de búsquedas $xxyy$, pueden suceder dos cosas, depende
 del ordenamiento que hayamos seleccionado para los anunciantes: Le asignamos a 
 $A$ las primeras dos búsquedas ($x$ y $x$), y después le asignamos a $B$ las dos
-restantes $yy$. Esto da un matching perfecto y nuestro ingreso total es 4.
+restantes $yy$. Esto da un matching perfecto y nuestro ingreso total es $4$.
 
 Sin embargo, si le asignamos las primeras dos a $B$, entonces cuando llegan $yy$
 no tenemos con quien hacer match pues el presupuesto de $B$ se agotó, y $A$ no hizo
-ofertas para la consulta $y$. Nuestro ingreso total es 2.
+ofertas para la consulta $y$. Nuestro ingreso total es $2$.
 
 Esto implica que el matching miope en este caso tiene un índice de competitividad
-de no más de 1/2.
+de no más de $1/2$.
 
 
 ---
@@ -383,10 +383,10 @@ que tenga presupuesto más alto. Deshacemos los empates de forma arbitraria (por
 #### Ejemplo {-}
 
 En la situación anterior podemos mejorar nuestro desempeño. Supongamos que el primer
-query $x$ se lo asignamos a $B$. El presupuesto de $B$ es ahora de 1 peso. Cuando llega
-el siguiente query $x$, notamos que $A$ tiene una oferta de 1 por $x$ y tiene mayor presupuesto (2). Le asignamos la consulta a $A$. Ahora $A$ y $B$ tienen el mismo presupuesto (1). Cuando
-llegan $yy$, solo podemos asignar una de ellas a $B$. En total, nuestro ingreso es 3
-y el índice de competitividad es 3/4.
+query $x$ se lo asignamos a $B$. El presupuesto de $B$ es ahora de $1$ peso. Cuando llega
+el siguiente query $x$, notamos que $A$ tiene una oferta de $1$ por $x$ y tiene mayor presupuesto (2). Le asignamos la consulta a $A$. Ahora $A$ y $B$ tienen el mismo presupuesto (1). Cuando
+llegan $yy$, solo podemos asignar una de ellas a $B$. En total, nuestro ingreso es $3$
+y el índice de competitividad es $3/4$.
 
 ---
 
@@ -403,7 +403,7 @@ algoritmo de balance. Suponemos primero:
 
 - Tenemos $A_1,\ldots, A_N$ anunciantes. Supongamos
 que el presupuesto de cada uno es $B$ fijo
-- Todas las ofertas son de valor 1, y suponemos que el CTR es igual para todos los anunciantes.
+- Todas las ofertas son de valor $1$, y suponemos que el CTR es igual para todos los anunciantes.
 
 
 ### Ejemplo: simulación
@@ -525,7 +525,7 @@ para los dos algoritmos.
 
 ## El algoritmo de balance generalizado
 
-En esta parte quitamos el supuesto de que las ofertas son 0 o 1. Ahora, denotamos
+En esta parte quitamos el supuesto de que las ofertas son $0$ o $1$. Ahora, denotamos
 por $x_i$ la oferta del anunciante $A_i$. Es necesario hacer una modificación, pues
 de otra manera el algoritmo podría asignar una consulta a un anunciante con
 alto presupuesto pero con una oferta chica, y consumir el inventario antes de 
