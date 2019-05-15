@@ -6,7 +6,7 @@ de *search ads*, o anuncios relacionados a consultas web en buscadores.
 Hay varios tipos de publicidad en línea:
 
 
-- **Anuncios de display**: estos se colocan en distintos sitios (editores o publishers) y son lo más parecido a la publicidad tradicional. Se cobran por impresiones (cuántas veces se mostró un anuncio de Coca a personas que entraron a la página del Universal, por ejemplo) y su propósito puede ser conseguir tráfico o ventas, aunque también comunmente se utilizan para mejorar la consideración o recordación de marca de algún producto.La colocación de estos anuncios se pueden decidir utilizando datos de los usuarios (qué sitios ha visto, qué intereses ha mostrado, etc). Aquí no discutiremos el tipos de algoritmos asociados a estos anuncios.
+- **Anuncios de display**: estos se colocan en distintos sitios (editores o publishers) y son lo más parecido a la publicidad tradicional. Se cobran por impresiones (cuántas veces se mostró un anuncio de Coca a personas que entraron a la página del Universal, por ejemplo) y su propósito puede ser conseguir tráfico o ventas, aunque también comunmente se utilizan para mejorar la consideración o recordación de marca de algún producto. La colocación de estos anuncios se pueden decidir utilizando datos de los usuarios (qué sitios ha visto, qué intereses ha mostrado, etc). Aquí no discutiremos el tipos de algoritmos asociados a estos anuncios.
 
 - Anuncios en tiendas como Amazon que son similares a recomendaciones.
 
