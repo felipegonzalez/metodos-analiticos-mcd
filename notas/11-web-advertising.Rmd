@@ -51,7 +51,7 @@ agotar las búsquedas de "viajes a cancún" y  el presupuesto de B, y después, 
 llegan búsquedas de "viajes a playa" 
 (que suponemos más comunes), no tenemos inventario de anuncios (para un día dado, por ejemplo), y todo el presupuesto de A se quedaría sin gastar.
 
-Sin embargo, su pudiéramos saber cuántas busquedas va a haber de cada término, podríamos
+Sin embargo, si pudiéramos saber cuántas busquedas va a haber de cada término, podríamos
 entonces compartir "viajes a cancún" entre A y B, sabiendo que el presupuesto restante
 de B podemos usarlo después en el término "viajes a playa".
 
