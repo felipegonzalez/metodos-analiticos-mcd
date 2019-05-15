@@ -539,7 +539,7 @@ fracción restante su presupuesto.
 - Cuando llega una consulta, asignamos la búsqueda al anunciante con mayor $\Psi_i$.
 
 Es posible demostrar que el índice competitivo de este algoritmo está cercano a
-$1-e^-1=0.63$. Nótese que este enfoque tiende a asignar consultas a
+$1-e^{-1}=0.63$. Nótese que este enfoque tiende a asignar consultas a
 anunciantes con presupuestos restantes grandes y ofertas altas. El factor
 $(1-e^{f_i})$ se puede ver como un factor de aversión al riesgo de no poder
 explotar el presupuesto de algún anunciante.
