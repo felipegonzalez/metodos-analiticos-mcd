@@ -372,7 +372,7 @@ de no más de 1/2.
 
 ---
 
-Sin embargo, opdemos hacer una mejora simple al algoritmo miope, intentando balancear
+Sin embargo, podemos hacer una mejora simple al algoritmo miope, intentando balancear
 los presupuestos.
 
 ```{block2, type="resumen"}
